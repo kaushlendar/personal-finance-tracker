@@ -25,7 +25,8 @@ import ResetPassword from "./pages/ResetPassword";
 import Settings from "./pages/Settings";
 
 const API_URL =
-  import.meta.env.VITE_API_URL || "http://localhost:5000";
+  import.meta.env.VITE_API_URL ||
+  "https://personal-finance-tracker-backend-jaz2.onrender.com";
 function App() {
   const [user, setUser] = useState(() => {
     try {

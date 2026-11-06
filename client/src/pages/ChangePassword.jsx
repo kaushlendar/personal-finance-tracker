@@ -27,8 +27,8 @@ function ChangePassword({ onBack }) {
       const token = localStorage.getItem("financeToken");
 
       const response = await fetch(
-        `${import.meta.env.VITE_API_URL || "http://localhost:5000"}/api/auth/change-password`,
-        {
+  `${API_URL}/api/auth/change-password`,
+  {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
